@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>theblackbird.ai &mdash; Question. Solve. Build.</title>
+<meta name="description" content="Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next." />
+<meta name="theme-color" content="#0a0a0b" />
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="theblackbird.ai home">
+      <span class="logo-chip">
+        <img src="assets/logo-mark.png" alt="" class="brand-mark" />
+      </span>
+      <span class="brand-word">the<span class="accent">black</span>bird<span class="brand-tld">.ai</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul class="nav-list" id="nav-list" data-list="nav.links"></ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" id="nav-cta" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-list" id="mobile-nav-list" data-list="nav.links"></ul>
+    <a class="btn btn-primary btn-lg" id="mobile-nav-cta" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-shards" aria-hidden="true">
+      <span class="shard shard-1"></span>
+      <span class="shard shard-2"></span>
+      <span class="shard shard-3"></span>
+      <span class="shard shard-4"></span>
+      <span class="shard shard-5"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-bind="hero.eyebrow">theblackbird.ai</p>
+        <h1 class="hero-heading" data-bind="hero.heading">Question. Solve. Build.</h1>
+        <p class="hero-sub" data-bind="hero.subheading">
+          We're Blackbird &mdash; strategic advisors and technology builders who help
+          businesses turn AI's rare moment of reinvention into a lasting advantage.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" data-bind="hero.primaryCtaLabel" data-bind-attr="href:hero.primaryCtaHref" href="#contact">Let's Talk</a>
+          <a class="btn btn-ghost btn-lg" data-bind="hero.secondaryCtaLabel" data-bind-attr="href:hero.secondaryCtaHref" href="#about">
+            <span data-bind="hero.secondaryCtaLabel">Discover our story</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" id="hero-visual">
+        <div class="hero-visual-glow"></div>
+        <div class="hero-logo-plate">
+          <img src="assets/logo-mark.png" alt="Blackbird logo mark" class="hero-logo" id="hero-logo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES / SOCIAL PROOF ============ -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <p class="eyebrow eyebrow-center" data-bind="industries.heading">Where We Fly</p>
+      <p class="industries-sub" data-bind="industries.subheading">Trusted by teams rethinking what their business could become.</p>
+    </div>
+    <div class="marquee" aria-hidden="false">
+      <div class="marquee-track" id="industries-track" data-list="industries.items"></div>
+      <div class="marquee-track" id="industries-track-2" data-list="industries.items" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT (manifesto scroll) ============ -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <p class="eyebrow" data-bind="about.eyebrow">About Us</p>
+      <h2 class="section-heading" data-bind="about.heading">Hello. We&rsquo;re Blackbird.</h2>
+
+      <div class="about-copy" id="about-copy" data-list="about.paragraphs"></div>
+
+      <p class="about-closing" data-bind="about.closingLine">Question. Solve. Build.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES (bento) ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-bind="services.eyebrow">Services</p>
+        <h2 class="section-heading" data-bind="services.heading">We advise. We build. We enable.</h2>
+        <p class="section-sub" data-bind="services.subheading">From possibility to progress.</p>
+      </div>
+
+      <div class="bento-grid" id="pillars-grid" data-list="services.pillars"></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK (timeline) ============ -->
+  <section class="timeline-section" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-bind="timeline.eyebrow">How We Work</p>
+        <h2 class="section-heading" data-bind="timeline.heading">A simple process for hard problems.</h2>
+      </div>
+
+      <div class="timeline" id="timeline-list" data-list="timeline.steps"></div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <section class="closing-cta">
+    <div class="closing-shards" aria-hidden="true"></div>
+    <div class="container closing-inner">
+      <h2 class="closing-heading" data-bind="closing.heading">Bring us the difficult problem.</h2>
+      <p class="closing-sub" data-bind="closing.subheading">The one that has survived three transformations.</p>
+      <a class="btn btn-invert btn-lg" data-bind="closing.ctaLabel" data-bind-attr="href:closing.ctaHref" href="#contact">Start the Conversation</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info reveal">
+        <p class="eyebrow" data-bind="contact.eyebrow">Contact</p>
+        <h2 class="section-heading" data-bind="contact.heading">Let&rsquo;s Talk</h2>
+        <p class="section-sub" data-bind="contact.subheading">Pull up a chair. Tell us about the problem no one else has been able to solve.</p>
+        <a class="contact-email" id="contact-email" data-bind="contact.email" data-bind-attr="href:contact.emailHref" href="mailto:hello@theblackbird.ai">hello@theblackbird.ai</a>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required data-bind-attr="placeholder:contact.formNamePlaceholder" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required data-bind-attr="placeholder:contact.formEmailPlaceholder" placeholder="Email address" />
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" required data-bind-attr="placeholder:contact.formMessagePlaceholder" placeholder="Tell us about your business challenge"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="contact-submit">
+          <span data-bind="contact.ctaLabel">Send Message</span>
+        </button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top" aria-label="theblackbird.ai home">
+        <span class="logo-chip logo-chip-sm">
+          <img src="assets/logo-mark.png" alt="" class="brand-mark" />
+        </span>
+        <span class="brand-word">the<span class="accent">black</span>bird<span class="brand-tld">.ai</span></span>
+      </a>
+      <p class="footer-tagline"><span data-bind="footer.tagline">SOAR</span> &mdash; <span data-bind="footer.description">Question. Solve. Build.</span></p>
+    </div>
+
+    <ul class="footer-links" id="footer-links" data-list="footer.links"></ul>
+
+    <ul class="footer-social" id="footer-social" data-list="footer.social"></ul>
+  </div>
+  <div class="container">
+    <p class="footer-copyright" id="footer-copyright" data-bind="footer.copyright">&copy; 2026 theblackbird.ai. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="admin-fab" href="admin.html" title="Edit site content" aria-label="Edit site content">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 20h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Edit Content</span>
+</a>
+
+<script src="js/content.js"></script>
+<script src="js/content-store.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
