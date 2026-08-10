@@ -85,7 +85,7 @@ window.DEFAULT_CONTENT = {
       "If that sounds like you\u2026",
       "Pull up a chair. Bring us the difficult problem. The one that has survived three transformations. The one everyone has learned to live with. The idea somebody once dismissed as impossible.",
       "Let\u2019s question it together. Let\u2019s strip away the assumptions. Let\u2019s see what AI changes\u2014and what it doesn\u2019t. And then, if there is something worth building, let\u2019s build it to last.",
-      "Flock with the Blackbird."
+      "Soar with the Blackbird."
     ],
     "closingLine": "Question. Solve. Build."
   },
@@ -97,7 +97,7 @@ window.DEFAULT_CONTENT = {
       {
         "title": "Blackbird FLY",
         "hook": "Have something worth taking to market? Let\u2019s give it wings.",
-        "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down",
+        "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "compass"
       },
       {
