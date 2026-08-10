@@ -2,19 +2,10 @@
   content.js
   ----------
   This file is the single source of truth for every piece of editable text
-  on the website. The site (index.html) and the content editor (admin.html)
-  both read from `window.DEFAULT_CONTENT`.
+  on the website. index.html reads from `window.DEFAULT_CONTENT` below.
 
-  HOW EDITING WORKS
-  1. Open admin.html in your browser, edit any field, click "Save Changes".
-     Your edits are stored in the browser (localStorage) and instantly show
-     up on index.html the next time you load it in the SAME browser.
-  2. To make your edits permanent (and visible to everyone, on any browser/
-     device), click "Download content.js" in the editor and replace this
-     file with the downloaded one.
-
-  You can also edit the text directly below by hand -- it is a plain
-  JavaScript object, safe to open in any text editor.
+  To change any text on the site, just edit the values below and save --
+  it is a plain JavaScript object, safe to open in any text editor.
 */
 
 window.DEFAULT_CONTENT = {
@@ -23,12 +14,17 @@ window.DEFAULT_CONTENT = {
     "tagline": "SOAR",
     "themeColor": "#0a0a0b"
   },
+  "banner": {
+    "text": "Open for Business",
+    "ctaLabel": "Let's Talk",
+    "ctaHref": "#contact"
+  },
   "nav": {
     "ctaLabel": "Let's Talk",
     "ctaHref": "#contact",
     "links": [
       { "label": "About", "href": "#about" },
-      { "label": "Services", "href": "#services" },
+      { "label": "Services & Products", "href": "#services" },
       { "label": "Contact", "href": "#contact" }
     ]
   },
@@ -37,9 +33,7 @@ window.DEFAULT_CONTENT = {
     "heading": "Question. Solve. Build.",
     "subheading": "We're Blackbird \u2014 strategic advisors and technology builders who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
     "primaryCtaLabel": "Let's Talk",
-    "primaryCtaHref": "#contact",
-    "secondaryCtaLabel": "Discover our story",
-    "secondaryCtaHref": "#about"
+    "primaryCtaHref": "#contact"
   },
   "industries": {
     "heading": "Where We Fly",
@@ -96,26 +90,30 @@ window.DEFAULT_CONTENT = {
     "closingLine": "Question. Solve. Build."
   },
   "services": {
-    "eyebrow": "Services",
+    "eyebrow": "Services & Products",
     "heading": "We advise. We build. We enable.",
     "subheading": "From possibility to progress. Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next. Our services help organizations navigate transformation and accelerate growth, while our products turn emerging technologies into practical, scalable solutions.",
     "pillars": [
       {
-        "title": "Advise",
-        "description": "Strategic advisory and deep industry expertise that help you cut through complexity and navigate transformation with clarity.",
+        "title": "Blackbird FLY",
+        "hook": "Have something worth taking to market? Let\u2019s give it wings.",
+        "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down",
         "icon": "compass"
       },
       {
-        "title": "Build",
-        "description": "Technology and products engineered to turn emerging capabilities \u2014 like AI \u2014 into practical, scalable solutions built to last.",
+        "title": "Blackbird LIVE",
+        "hook": "What if building software felt a little more intelligent and intuitive?",
+        "description": "Blackbird LIVE(Lifecycle Intelligence & Value Engine) brings AI into the software development lifecycle—from idea and requirements through design, development, testing, and release. For enterprises and technology teams ready to rethink how software gets built in the age of AI and organizations seeking to make the entire engineering lifecycle more intelligent, autonomous, efficient, and governed.",
         "icon": "cube"
       },
       {
-        "title": "Enable",
-        "description": "Hands-on partnership that accelerates growth and turns bold ideas into a durable, measurable business advantage.",
+        "title": "Blackbird RISE",
+        "hook": "Some ideas deserve more than a prototype. They deserve to arise.",
+        "description": "Blackbird Arise is our pluggable technology foundation for turning ideas into products and products into businesses. Bring the problem, the insight, or even an unfinished thought. We bring the building blocks to help take it from \u201cWhat if?\u201d to \u201cWhat\u2019s next?\u201d.For entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "spark"
       }
-    ]
+    ],
+    "closingLine": "Three offerings. One Blackbird philosophy: question what exists, solve what matters, and build what deserves to last."
   },
   "timeline": {
     "eyebrow": "How We Work",

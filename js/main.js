@@ -1,16 +1,16 @@
 /*
   main.js
   -------
-  Renders window content (from content.js + any saved edits) into the DOM
-  and wires up the site's interactions: sticky/blurred header, mobile nav,
-  scroll-spy navigation, scroll-reveal animations, hero parallax, marquee,
-  and the contact form.
+  Renders window content (from content.js) into the DOM and wires up the
+  site's interactions: sticky/blurred header, mobile nav, scroll-spy
+  navigation, scroll-reveal animations, hero parallax, marquee, and the
+  contact form.
 */
 
 (function () {
   "use strict";
 
-  const content = window.BBContentStore.getContent();
+  const content = window.DEFAULT_CONTENT;
 
   function getByPath(obj, path) {
     return path.split(".").reduce((acc, key) => (acc == null ? acc : acc[key]), obj);
@@ -103,11 +103,13 @@
     el.innerHTML = pillars
       .map((p, i) => {
         const num = String(i + 1).padStart(2, "0");
+        const hook = p.hook ? `<p class="bento-hook">${p.hook}</p>` : "";
         return `
         <div class="bento-card reveal-item">
           <span class="bento-index">${num}</span>
           <div class="bento-icon">${ICONS[p.icon] || ICONS.spark}</div>
           <h3>${p.title}</h3>
+          ${hook}
           <p>${p.description}</p>
         </div>`;
       })
@@ -160,6 +162,48 @@
     renderFooterLists();
   }
 
+  /* ---------------- Announcement banner ---------------- */
+  function initAnnouncementBar() {
+    const bar = document.getElementById("announcement-bar");
+    if (!bar) return;
+
+    const hasText = !!(content.banner && content.banner.text && content.banner.text.trim());
+    if (!hasText) {
+      bar.style.display = "none";
+      document.documentElement.style.setProperty("--banner-h", "0px");
+      return;
+    }
+
+    let dismissed = false;
+    try {
+      dismissed = window.sessionStorage.getItem("bb_banner_dismissed") === "1";
+    } catch (e) {
+      /* sessionStorage unavailable — banner will just always show */
+    }
+
+    function applyHeight() {
+      const h = bar.classList.contains("hidden") ? 0 : bar.offsetHeight;
+      document.documentElement.style.setProperty("--banner-h", `${h}px`);
+    }
+
+    if (dismissed) bar.classList.add("hidden");
+    applyHeight();
+    window.addEventListener("resize", applyHeight, { passive: true });
+
+    const closeBtn = document.getElementById("announcement-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        bar.classList.add("hidden");
+        applyHeight();
+        try {
+          window.sessionStorage.setItem("bb_banner_dismissed", "1");
+        } catch (e) {
+          /* ignore */
+        }
+      });
+    }
+  }
+
   /* ---------------- Header scroll state ---------------- */
   function initHeaderScroll() {
     const header = document.getElementById("site-header");
@@ -197,6 +241,13 @@
   }
 
   /* ---------------- Smooth anchor scrolling (offset for fixed header) ---------------- */
+  function scrollToTarget(target) {
+    const header = document.getElementById("site-header");
+    const headerBottom = header ? header.getBoundingClientRect().bottom : 80;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerBottom + 1;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+
   function initAnchorScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((a) => {
       a.addEventListener("click", (e) => {
@@ -205,9 +256,7 @@
         const target = document.querySelector(id);
         if (!target) return;
         e.preventDefault();
-        const headerH = document.getElementById("site-header")?.offsetHeight || 80;
-        const top = target.getBoundingClientRect().top + window.scrollY - headerH + 1;
-        window.scrollTo({ top, behavior: "smooth" });
+        scrollToTarget(target);
         history.pushState(null, "", id);
       });
     });
@@ -329,6 +378,7 @@
   /* ---------------- Init ---------------- */
   document.addEventListener("DOMContentLoaded", () => {
     renderAll();
+    initAnnouncementBar();
     initHeaderScroll();
     initMobileNav();
     initAnchorScroll();
