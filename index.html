@@ -3,13 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>theblackbird.ai &mdash; Question. Solve. Build.</title>
+<title>theblackbird.ai &mdash; Question. Learn. Build.</title>
 <meta name="description" content="Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#fbfbfa" />
+<meta property="og:title" content="theblackbird.ai — Question. Learn. Build." />
+<meta property="og:description" content="Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg" />
 <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<link rel="apple-touch-icon" href="assets/logo-mark.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -23,7 +29,7 @@
     <span class="announcement-dot" aria-hidden="true"></span>
     <span data-bind="banner.text">Open for Business</span>
     <a class="announcement-link" data-bind="banner.ctaLabel" data-bind-attr="href:banner.ctaHref" href="#contact">Let's Talk</a>
-    <button class="announcement-close" id="announcement-close" aria-label="Dismiss announcement">&times;</button>
+    <button class="announcement-close" id="announcement-close" type="button" aria-label="Dismiss announcement">&times;</button>
   </div>
 </div>
 
@@ -32,26 +38,26 @@
   <div class="container header-inner">
     <a class="brand" href="#top" aria-label="theblackbird.ai home">
       <span class="logo-chip">
-        <img src="assets/logo-mark.png" alt="" class="brand-mark" />
+        <img src="assets/logo-mark.svg" alt="" class="brand-mark" width="44" height="42" />
       </span>
       <span class="brand-word">thebl<span class="accent">ack</span>bird<span class="brand-tld">.ai</span></span>
     </a>
 
-    <nav class="main-nav" id="main-nav" aria-label="Primary">
-      <ul class="nav-list" id="nav-list" data-list="nav.links"></ul>
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list" id="nav-list"></ul>
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn-primary btn-sm" id="nav-cta" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <a class="btn btn-primary btn-sm" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 
   <div class="mobile-nav" id="mobile-nav">
-    <ul class="mobile-nav-list" id="mobile-nav-list" data-list="nav.links"></ul>
-    <a class="btn btn-primary btn-lg" id="mobile-nav-cta" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
+    <ul class="mobile-nav-list" id="mobile-nav-list"></ul>
+    <a class="btn btn-primary btn-lg" data-bind="nav.ctaLabel" data-bind-attr="href:nav.ctaHref" href="#contact">Let's Talk</a>
   </div>
 </header>
 
@@ -71,9 +77,9 @@
     <div class="container hero-inner">
       <div class="hero-copy reveal">
         <p class="eyebrow" data-bind="hero.eyebrow">theblackbird.ai</p>
-        <h1 class="hero-heading" data-bind="hero.heading">Question. Solve. Build.</h1>
+        <h1 class="hero-heading" data-bind="hero.heading">Question. Learn. Build.</h1>
         <p class="hero-sub" data-bind="hero.subheading">
-          We're Blackbird &mdash; strategic advisors and technology builders who help
+          We're Blackbird &mdash; strategic advisors and technology partners who help
           businesses turn AI's rare moment of reinvention into a lasting advantage.
         </p>
         <div class="hero-ctas">
@@ -81,10 +87,10 @@
         </div>
       </div>
 
-      <div class="hero-visual reveal" id="hero-visual">
-        <div class="hero-visual-glow"></div>
+      <div class="hero-visual reveal">
+        <div class="hero-visual-glow" aria-hidden="true"></div>
         <div class="hero-logo-plate">
-          <img src="assets/logo-mark.png" alt="Blackbird logo mark" class="hero-logo" id="hero-logo" />
+          <img src="assets/logo-mark.svg" alt="Blackbird logo mark" class="hero-logo" width="223" height="213" />
         </div>
       </div>
     </div>
@@ -101,48 +107,43 @@
       <p class="eyebrow eyebrow-center" data-bind="industries.heading">Where We Fly</p>
       <p class="industries-sub" data-bind="industries.subheading">Trusted by teams rethinking what their business could become.</p>
     </div>
-    <div class="marquee" aria-hidden="false">
-      <div class="marquee-track" id="industries-track" data-list="industries.items"></div>
-      <div class="marquee-track" id="industries-track-2" data-list="industries.items" aria-hidden="true"></div>
+    <div class="marquee">
+      <div class="marquee-track" id="industries-track"></div>
+      <div class="marquee-track" id="industries-track-2" aria-hidden="true"></div>
     </div>
   </section>
 
-  <!-- ============ ABOUT (manifesto scroll) ============ -->
+  <!-- ============ ABOUT ============ -->
   <section class="about" id="about">
     <div class="container about-inner">
       <p class="eyebrow" data-bind="about.eyebrow">About Us</p>
       <h2 class="section-heading" data-bind="about.heading">Hello. We&rsquo;re Blackbird.</h2>
-
-      <div class="about-copy" id="about-copy" data-list="about.paragraphs"></div>
-
-      <p class="about-closing" data-bind="about.closingLine">Question. Solve. Build.</p>
+      <div class="about-copy" id="about-copy"></div>
+      <p class="about-closing" data-bind="about.closingLine">Question. Learn. Build.</p>
     </div>
   </section>
 
-  <!-- ============ SERVICES (bento) ============ -->
+  <!-- ============ SERVICES ============ -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow" data-bind="services.eyebrow">Services</p>
+        <p class="eyebrow" data-bind="services.eyebrow">Services &amp; Products</p>
         <h2 class="section-heading" data-bind="services.heading">We advise. We build. We enable.</h2>
         <p class="section-sub" data-bind="services.subheading">From possibility to progress.</p>
       </div>
-
-      <div class="bento-grid" id="pillars-grid" data-list="services.pillars"></div>
-
+      <div class="bento-grid" id="pillars-grid"></div>
       <p class="services-closing" data-bind="services.closingLine">Three offerings. One Blackbird philosophy.</p>
     </div>
   </section>
 
-  <!-- ============ HOW WE WORK (timeline) ============ -->
+  <!-- ============ HOW WE WORK ============ -->
   <section class="timeline-section" id="how-it-works">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow" data-bind="timeline.eyebrow">How We Work</p>
         <h2 class="section-heading" data-bind="timeline.heading">A simple process for hard problems.</h2>
       </div>
-
-      <div class="timeline" id="timeline-list" data-list="timeline.steps"></div>
+      <div class="timeline" id="timeline-list"></div>
     </div>
   </section>
 
@@ -162,22 +163,21 @@
       <div class="contact-info reveal">
         <p class="eyebrow" data-bind="contact.eyebrow">Contact</p>
         <h2 class="section-heading" data-bind="contact.heading">Let&rsquo;s Talk</h2>
-        <p class="section-sub" data-bind="contact.subheading">Pull up a chair. Tell us about the problem no one else has been able to solve.</p>
-        <a class="contact-email" id="contact-email" data-bind="contact.email" data-bind-attr="href:contact.emailHref" href="mailto:hello@theblackbird.ai">hello@theblackbird.ai</a>
       </div>
 
       <form class="contact-form reveal" id="contact-form">
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="field">
           <label for="cf-name">Name</label>
-          <input type="text" id="cf-name" name="name" required data-bind-attr="placeholder:contact.formNamePlaceholder" placeholder="Your name" />
+          <input type="text" id="cf-name" name="name" autocomplete="name" maxlength="120" required data-bind-attr="placeholder:contact.formNamePlaceholder" placeholder="Your name" />
         </div>
         <div class="field">
           <label for="cf-email">Email</label>
-          <input type="email" id="cf-email" name="email" required data-bind-attr="placeholder:contact.formEmailPlaceholder" placeholder="Email address" />
+          <input type="email" id="cf-email" name="email" autocomplete="email" inputmode="email" maxlength="254" required data-bind-attr="placeholder:contact.formEmailPlaceholder" placeholder="Email address" />
         </div>
         <div class="field">
           <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" rows="4" required data-bind-attr="placeholder:contact.formMessagePlaceholder" placeholder="Tell us about your business challenge"></textarea>
+          <textarea id="cf-message" name="message" rows="4" maxlength="4000" required data-bind-attr="placeholder:contact.formMessagePlaceholder" placeholder="Tell us about your business challenge"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="contact-submit">
           <span data-bind="contact.ctaLabel">Send Message</span>
@@ -195,19 +195,16 @@
     <div class="footer-brand">
       <a class="brand" href="#top" aria-label="theblackbird.ai home">
         <span class="logo-chip logo-chip-sm">
-          <img src="assets/logo-mark.png" alt="" class="brand-mark" />
+          <img src="assets/logo-mark.svg" alt="" class="brand-mark" width="36" height="34" />
         </span>
         <span class="brand-word">thebl<span class="accent">ack</span>bird<span class="brand-tld">.ai</span></span>
       </a>
-      <p class="footer-tagline"><span data-bind="footer.tagline">SOAR</span> &mdash; <span data-bind="footer.description">Question. Solve. Build.</span></p>
+      <p class="footer-tagline"><span data-bind="footer.tagline">SOAR</span> &mdash; <span data-bind="footer.description">Question. Learn. Build.</span></p>
     </div>
-
-    <ul class="footer-links" id="footer-links" data-list="footer.links"></ul>
-
-    <ul class="footer-social" id="footer-social" data-list="footer.social"></ul>
+    <ul class="footer-links" id="footer-links"></ul>
   </div>
   <div class="container">
-    <p class="footer-copyright" id="footer-copyright" data-bind="footer.copyright">&copy; 2026 theblackbird.ai. All rights reserved.</p>
+    <p class="footer-copyright" data-bind="footer.copyright">&copy; 2026 theblackbird.ai. All rights reserved.</p>
   </div>
 </footer>
 

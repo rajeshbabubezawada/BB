@@ -9,11 +9,6 @@
 */
 
 window.DEFAULT_CONTENT = {
-  "meta": {
-    "siteName": "theblackbird.ai",
-    "tagline": "SOAR",
-    "themeColor": "#0a0a0b"
-  },
   "banner": {
     "text": "Open for Business",
     "ctaLabel": "Let's Talk",
@@ -30,8 +25,8 @@ window.DEFAULT_CONTENT = {
   },
   "hero": {
     "eyebrow": "theblackbird.ai",
-    "heading": "Question. Solve. Build.",
-    "subheading": "We're Blackbird \u2014 strategic advisors and technology builders who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
+    "heading": "Question. Learn. Build.",
+    "subheading": "We're Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
     "primaryCtaLabel": "Let's Talk",
     "primaryCtaHref": "#contact"
   },
@@ -39,27 +34,27 @@ window.DEFAULT_CONTENT = {
     "heading": "Where We Fly",
     "subheading": "Trusted by teams rethinking what their business could become.",
     "items": [
-      "Financial Services",
-      "Healthcare & Life Sciences",
-      "Manufacturing & Industrial",
-      "Retail & CPG",
-      "Public Sector",
-      "Technology & SaaS"
+      "Insurance",
+      "Finance",
+      "Retail",
+      "eCommerce",
+      "Manufacturing",
+      "Others"
     ]
   },
   "about": {
     "eyebrow": "About Us",
     "heading": "Hello. We\u2019re Blackbird.",
     "paragraphs": [
-      "Before we tell you what we do, perhaps we should tell you what we believe. Because if our beliefs don\u2019t align, our services probably won\u2019t matter. We believe good business begins with doing the right thing. Even when it means leaving business on the table. Even when the easier answer is to sell another service, another product, another year of work. If you don\u2019t need it, we\u2019d rather tell you.",
+      "Before we tell you what we do, perhaps we should tell you what we believe in. Because if our beliefs don\u2019t align, our offerings probably won\u2019t matter. We believe good business begins with doing the right thing. Even when it means leaving business on the table. Even when the easier answer is to sell another service, another product, another year of work. If you don\u2019t need it, we\u2019d rather tell you.",
       "No fine prints here.",
       "Still with us? Good.",
       "Then there\u2019s something else you should know. We ask a lot of questions. Why does this process exist? Why does this system still exist? Why are ten people doing something technology could simplify? Why are we modernizing yesterday\u2019s architecture instead of reconsidering it?",
       "And, perhaps most importantly: if we were starting today, would we build it this way?",
       "Questioning the status quo isn\u2019t disruption for its own sake. It is curiosity with a purpose.",
       "Here\u2019s where our interests become a little unusual.",
-      "We\u2019re less interested in how much of your technology budget we can capture. We\u2019re much more interested in your P&L.",
-      "Can we help you make more? Can we help you spend less where spending adds little value? Can technology create a new source of revenue? Can AI change the economics of a process\u2014not merely automate a few steps? Can something that was once a cost center become an advantage?",
+      "We\u2019re less interested in how much of your technology budget we can capture. We\u2019re much more interested in making a positive impact on your P&L.",
+      "Can we help you do more? Can we help you spend less where spending adds little value? Can technology be an enabler of revenues and growth? Can AI change the economics of a process\u2014not merely automate a few steps? Can something that was once a cost center become a competitive advantage?",
       "That is a much more interesting conversation to us.",
       "We want to participate in the value we create, not simply the budget you spend.",
       "And then came AI.",
@@ -71,23 +66,23 @@ window.DEFAULT_CONTENT = {
       "We like experimentation. We love curiosity. But we believe in building to last.",
       "Architecture should endure. Products should solve real problems. Technology should earn its place. And companies should be built around principles that survive technology cycles.",
       "That is why we can be enthusiastic about AI without being intoxicated by it.",
-      "The destination matters more than the trend.",
+      "Outcomes matter more than the trend",
       "People come first.",
-      "We believe in something that may sound counterintuitive: employees first, customers second.",
-      "Because extraordinary customer experiences rarely come from unhappy, uninspired people.",
-      "Take care of good people. Give them trust. Give them room to question. Let them experiment. Let them disagree. Let them care deeply about the work. They will take care of customers.",
+      "We believe in something that may sound counterintuitive: Employees-first culture ensures that client-delight follows!",
+      "Because extraordinary client experiences rarely come from unhappy, uninspired people.",
+      "Take care of good people. Trust them. Allow them to question. Encourage them to experiment and disagree. Let them care deeply about the work. They will take care of clients.",
       "It is remarkably simple.",
       "Perhaps you\u2019re wondering who we want to work with.",
       "Not everyone. And we think that\u2019s healthy.",
-      "We want partners who are driven by purpose before another buck. Leaders willing to question assumptions. Organizations willing to rethink rather than simply replace.",
+      "We want partners who are driven by purpose and not just profits. Leaders willing to question assumptions. Organizations willing to rethink rather than simply replace.",
       "People who can imagine what their business could become\u2014not merely what next year\u2019s technology roadmap says it should become. People willing to spread their wings before the path is completely obvious.",
       "Because meaningful change has always required a little courage.",
       "If that sounds like you\u2026",
-      "Pull up a chair. Bring us the difficult problem. The one that has survived three transformations. The one everyone has learned to live with. The idea somebody once dismissed as impossible.",
+      "Let's discuss your difficult problems. The one that has survived three transformations. The one everyone has learned to live with. The idea somebody once dismissed as impossible.",
       "Let\u2019s question it together. Let\u2019s strip away the assumptions. Let\u2019s see what AI changes\u2014and what it doesn\u2019t. And then, if there is something worth building, let\u2019s build it to last.",
       "Soar with the Blackbird."
     ],
-    "closingLine": "Question. Solve. Build."
+    "closingLine": "Question. Learn. Build."
   },
   "services": {
     "eyebrow": "Services & Products",
@@ -95,25 +90,25 @@ window.DEFAULT_CONTENT = {
     "subheading": "From possibility to progress. Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next. Our services help organizations navigate transformation and accelerate growth, while our products turn emerging technologies into practical, scalable solutions.",
     "pillars": [
       {
-        "title": "Blackbird FLY",
+        "title": "Blackbird Fly",
         "hook": "Have something worth taking to market? Let\u2019s give it wings.",
         "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "compass"
       },
       {
-        "title": "Blackbird LIVE",
+        "title": "Blackbird Thrive",
         "hook": "What if building software felt a little more intelligent and intuitive?",
-        "description": "Blackbird LIVE(Lifecycle Intelligence & Value Engine) brings AI into the software development lifecycle—from idea and requirements through design, development, testing, and release. For enterprises and technology teams ready to rethink how software gets built in the age of AI and organizations seeking to make the entire engineering lifecycle more intelligent, autonomous, efficient, and governed.",
+        "description": "Blackbird Thrive brings AI into the software development lifecycle—from idea and requirements through design, development, testing, and release. For enterprises and technology teams ready to rethink how software gets built in the age of AI and organizations seeking to make the entire engineering lifecycle more intelligent, autonomous, efficient, and governed.",
         "icon": "cube"
       },
       {
-        "title": "Blackbird RISE",
-        "hook": "Some ideas deserve more than a prototype. They deserve to arise.",
-        "description": "Blackbird Arise is our pluggable technology foundation for turning ideas into products and products into businesses. Bring the problem, the insight, or even an unfinished thought. We bring the building blocks to help take it from \u201cWhat if?\u201d to \u201cWhat\u2019s next?\u201d.For entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
+        "title": "Blackbird Rise",
+        "hook": "Some ideas deserve more than a prototype. They deserve to rise.",
+        "description": "Blackbird Rise is our pluggable technology foundation for turning ideas into products and products into businesses. Bring the problem, the insight, or even an unfinished thought. We bring the building blocks to help take it from \u201cWhat if?\u201d to \u201cWhat\u2019s next?\u201d. For entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "spark"
       }
     ],
-    "closingLine": "Three offerings. One Blackbird philosophy: question what exists, solve what matters, and build what deserves to last."
+    "closingLine": "Three offerings. One Blackbird philosophy: question the status quo, learn what matters, and build what deserves to last."
   },
   "timeline": {
     "eyebrow": "How We Work",
@@ -126,7 +121,7 @@ window.DEFAULT_CONTENT = {
       },
       {
         "number": "02",
-        "title": "Solve",
+        "title": "Learn",
         "description": "We strip away what doesn\u2019t serve the business and design a path that is grounded in your P&L, not just your tech stack."
       },
       {
@@ -145,25 +140,15 @@ window.DEFAULT_CONTENT = {
   "contact": {
     "eyebrow": "Contact",
     "heading": "Let\u2019s Talk",
-    "subheading": "Pull up a chair. Tell us about the problem no one else has been able to solve.",
-    "email": "hello@theblackbird.ai",
     "ctaLabel": "Send Message",
+    "email": "anil@stg2020.com",
     "formNamePlaceholder": "Your name",
     "formEmailPlaceholder": "Email address",
     "formMessagePlaceholder": "Tell us about your business challenge"
   },
   "footer": {
     "tagline": "SOAR",
-    "description": "Question. Solve. Build.",
-    "copyright": "\u00a9 {year} theblackbird.ai. All rights reserved.",
-    "links": [
-      { "label": "Privacy Policy", "href": "#" },
-      { "label": "Terms of Service", "href": "#" }
-    ],
-    "social": [
-      { "label": "LinkedIn", "href": "#", "icon": "linkedin" },
-      { "label": "X", "href": "#", "icon": "x" },
-      { "label": "Instagram", "href": "#", "icon": "instagram" }
-    ]
+    "description": "Question. Learn. Build.",
+    "copyright": "\u00a9 {year} theblackbird.ai. All rights reserved."
   }
 };
