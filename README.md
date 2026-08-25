@@ -31,7 +31,7 @@ Then open `http://localhost:8080`.
 
 Open `js/content.js` and change any text value. Save, then refresh the page.
 
-The contact form sends messages to the address in `contact.email`.
+The contact form sends messages through the AWS REST API in `contact.formEndpoint` (`/Prod/BMail`). It posts JSON `{ name, email, message }`.
 
 ## Host on GitHub Pages
 
@@ -39,8 +39,6 @@ The contact form sends messages to the address in `contact.email`.
 2. In the repo go to **Settings → Pages**.
 3. Set **Source** to **Deploy from a branch**, branch `main`, folder `/ (root)`.
 4. Save. The site will be at `https://YOUR_USERNAME.github.io/YOUR_REPO/`.
-
-After the first real form submission, FormSubmit emails `contact.email` a confirmation link. Click it once so later messages are delivered.
 
 ## Design notes
 

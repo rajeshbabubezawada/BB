@@ -385,17 +385,20 @@
     const submit = document.getElementById("contact-submit");
     if (!form || !note) return;
 
+    const endpoint =
+      (content.contact && content.contact.formEndpoint) ||
+      "https://erj8bb42dd.execute-api.ap-south-2.amazonaws.com/Prod/BMail";
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const name = form.name.value.trim();
       const email = form.email.value.trim();
       const message = form.message.value.trim();
-      const honeyField = form.querySelector('[name="_honey"]');
-      const honey = honeyField ? honeyField.value.trim() : "";
+      const botcheck = form.querySelector('[name="botcheck"]');
 
       note.classList.remove("success", "error");
 
-      if (honey) {
+      if (botcheck && botcheck.checked) {
         note.textContent = "Thanks — your message has been sent.";
         note.classList.add("success");
         form.reset();
@@ -414,7 +417,6 @@
         return;
       }
 
-      const to = (content.contact && content.contact.email) || "anil@stg2020.com";
       if (submit) {
         submit.disabled = true;
         submit.setAttribute("aria-busy", "true");
@@ -422,7 +424,7 @@
       note.textContent = "Sending your message…";
 
       try {
-        const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
+        const res = await fetch(endpoint, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -432,15 +434,11 @@
             name,
             email,
             message,
-            _subject: `New inquiry from ${name} via theblackbird.ai`,
-            _replyto: email,
-            _template: "table",
-            _captcha: "false",
           }),
         });
         const data = await res.json().catch(() => ({}));
-        if (!res.ok || data.success === "false") {
-          throw new Error(data.message || "Send failed");
+        if (!res.ok) {
+          throw new Error((data && data.message) || "Send failed");
         }
         note.textContent = "Thanks — your message has been sent.";
         note.classList.add("success");

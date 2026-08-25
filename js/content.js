@@ -142,6 +142,7 @@ window.DEFAULT_CONTENT = {
     "heading": "Let\u2019s Talk",
     "ctaLabel": "Send Message",
     "email": "anil@stg2020.com",
+    "formEndpoint": "https://erj8bb42dd.execute-api.ap-south-2.amazonaws.com/Prod/BMail",
     "formNamePlaceholder": "Your name",
     "formEmailPlaceholder": "Email address",
     "formMessagePlaceholder": "Tell us about your business challenge"
