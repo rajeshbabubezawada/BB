@@ -26,7 +26,7 @@ window.DEFAULT_CONTENT = {
   "hero": {
     "eyebrow": "theblackbird.ai",
     "heading": "Question. Learn. Build.",
-    "subheading": "We're Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
+    "subheading": "We're the Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
     "primaryCtaLabel": "Let's Talk",
     "primaryCtaHref": "#contact"
   },
@@ -44,7 +44,7 @@ window.DEFAULT_CONTENT = {
   },
   "about": {
     "eyebrow": "About Us",
-    "heading": "Hello. We\u2019re Blackbird.",
+    "heading": "Hello. We\u2019re the Blackbird.",
     "paragraphs": [
       "Before we tell you what we do, perhaps we should tell you what we believe in. Because if our beliefs don\u2019t align, our offerings probably won\u2019t matter. We believe good business begins with doing the right thing. Even when it means leaving business on the table. Even when the easier answer is to sell another service, another product, another year of work. If you don\u2019t need it, we\u2019d rather tell you.",
       "No fine prints here.",
@@ -87,24 +87,24 @@ window.DEFAULT_CONTENT = {
   "services": {
     "eyebrow": "Services & Products",
     "heading": "We advise. We build. We enable.",
-    "subheading": "From possibility to progress. Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next. Our services help organizations navigate transformation and accelerate growth, while our products turn emerging technologies into practical, scalable solutions.",
+    "subheading": "From possibility to progress. The Blackbird combines strategic advisory, industry expertise, and technology to help businesses solve meaningful problems and build what comes next. Our services help organizations navigate transformation and accelerate growth, while our products turn emerging technologies into practical, scalable solutions.",
     "pillars": [
       {
-        "title": "Blackbird Fly",
+        "title": "The Blackbird Fly",
         "hook": "Have something worth taking to market? Let\u2019s give it wings.",
         "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "compass"
       },
       {
-        "title": "Blackbird Thrive",
+        "title": "The Blackbird Thrive",
         "hook": "What if building software felt a little more intelligent and intuitive?",
-        "description": "Blackbird Thrive brings AI into the software development lifecycle—from idea and requirements through design, development, testing, and release. For enterprises and technology teams ready to rethink how software gets built in the age of AI and organizations seeking to make the entire engineering lifecycle more intelligent, autonomous, efficient, and governed.",
+        "description": "The Blackbird Thrive brings AI into the software development lifecycle—from idea and requirements through design, development, testing, and release. For enterprises and technology teams ready to rethink how software gets built in the age of AI and organizations seeking to make the entire engineering lifecycle more intelligent, autonomous, efficient, and governed.",
         "icon": "cube"
       },
       {
-        "title": "Blackbird Rise",
+        "title": "The Blackbird Rise",
         "hook": "Some ideas deserve more than a prototype. They deserve to rise.",
-        "description": "Blackbird Rise is our pluggable technology foundation for turning ideas into products and products into businesses. Bring the problem, the insight, or even an unfinished thought. We bring the building blocks to help take it from \u201cWhat if?\u201d to \u201cWhat\u2019s next?\u201d. For entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
+        "description": "The Blackbird Rise is our pluggable technology foundation for turning ideas into products and products into businesses. Bring the problem, the insight, or even an unfinished thought. We bring the building blocks to help take it from \u201cWhat if?\u201d to \u201cWhat\u2019s next?\u201d. For entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
         "icon": "spark"
       }
     ],
