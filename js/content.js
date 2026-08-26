@@ -26,7 +26,7 @@ window.DEFAULT_CONTENT = {
   "hero": {
     "eyebrow": "theblackbird.ai",
     "heading": "Question. Learn. Build.",
-    "subheading": "We're the Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
+    "subheading": "We're The Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
     "primaryCtaLabel": "Let's Talk",
     "primaryCtaHref": "#contact"
   },
@@ -44,7 +44,7 @@ window.DEFAULT_CONTENT = {
   },
   "about": {
     "eyebrow": "About Us",
-    "heading": "Hello. We\u2019re the Blackbird.",
+    "heading": "Hello. We\u2019re The Blackbird.",
     "paragraphs": [
       "Before we tell you what we do, perhaps we should tell you what we believe in. Because if our beliefs don\u2019t align, our offerings probably won\u2019t matter. We believe good business begins with doing the right thing. Even when it means leaving business on the table. Even when the easier answer is to sell another service, another product, another year of work. If you don\u2019t need it, we\u2019d rather tell you.",
       "No fine prints here.",
@@ -80,7 +80,7 @@ window.DEFAULT_CONTENT = {
       "If that sounds like you\u2026",
       "Let's discuss your difficult problems. The one that has survived three transformations. The one everyone has learned to live with. The idea somebody once dismissed as impossible.",
       "Let\u2019s question it together. Let\u2019s strip away the assumptions. Let\u2019s see what AI changes\u2014and what it doesn\u2019t. And then, if there is something worth building, let\u2019s build it to last.",
-      "Soar with the Blackbird."
+      "Soar with The Blackbird."
     ],
     "closingLine": "Question. Learn. Build."
   },
@@ -108,7 +108,7 @@ window.DEFAULT_CONTENT = {
         "icon": "spark"
       }
     ],
-    "closingLine": "Three offerings. One Blackbird philosophy: question the status quo, learn what matters, and build what deserves to last."
+    "closingLine": "Three offerings. The Blackbird philosophy: question the status quo, learn what matters, and build what deserves to last."
   },
   "timeline": {
     "eyebrow": "How We Work",
