@@ -6,6 +6,8 @@
 
   To change any text on the site, just edit the values below and save --
   it is a plain JavaScript object, safe to open in any text editor.
+  
+  This is a placeholder comment
 */
 
 window.DEFAULT_CONTENT = {
