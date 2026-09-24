@@ -46,7 +46,7 @@ window.DEFAULT_CONTENT = {
   },
   "about": {
     "eyebrow": "About Us",
-    "heading": "Hello. We\u2019re The Blackbird.",
+    "heading": "Hello! We\u2019re The Blackbird.",
     "paragraphs": [
       "Before we tell you what we do, perhaps we should tell you what we believe in. Because if our beliefs don\u2019t align, our offerings probably won\u2019t matter. We believe good business begins with doing the right thing. Even when it means leaving business on the table. Even when the easier answer is to sell another service, another product, another year of work. If you don\u2019t need it, we\u2019d rather tell you.",
       "No fine prints here.",
