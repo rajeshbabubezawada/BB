@@ -26,7 +26,7 @@ window.DEFAULT_CONTENT = {
     ]
   },
   "hero": {
-    "eyebrow": "theblackbird.ai",
+    "eyebrow": "Blackbird Ventures Inc",
     "heading": "Question. Learn. Build.",
     "subheading": "We're The Blackbird \u2014 strategic advisors and technology partners who help businesses turn AI's rare moment of reinvention into a lasting advantage.",
     "primaryCtaLabel": "Let's Talk",
@@ -94,7 +94,7 @@ window.DEFAULT_CONTENT = {
       {
         "title": "The Blackbird Fly",
         "hook": "Have something worth taking to market? Let\u2019s give it wings.",
-        "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\nFor entrepreneurs and enterprises with a compelling idea or business problem—but who don’t want technology to slow them down.",
+        "description": "We help companies enter, position, sell, and grow in the U.S. market. Not as advisors watching from the sidelines\u2014we want to be alongside you, opening doors, shaping the story, and sharing in the success we help create.\n",
         "icon": "compass"
       },
       {
@@ -152,6 +152,6 @@ window.DEFAULT_CONTENT = {
   "footer": {
     "tagline": "SOAR",
     "description": "Question. Learn. Build.",
-    "copyright": "\u00a9 {year} theblackbird.ai. All rights reserved."
+    "copyright": "\u00a9 {year} Blackbird Ventures Inc. All rights reserved."
   }
 };
